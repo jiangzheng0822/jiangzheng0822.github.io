@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tesla Stock Forecasting</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Tesla Stock Price Forecasting</h1>
+
+<p><b>Author:</b> Zheng Jiang</p>
+
+<h2>Overview</h2>
+<p>
+This project analyzes and forecasts Tesla stock prices using time series models.
+The goal is to evaluate whether prediction intervals provide reliable coverage of future prices.
+</p>
+
+<h2>Data</h2>
+<p>
+Daily Tesla stock data including Open, High, Low, Close, and Volume.
+The dataset contains approximately 2,200 trading days.
+</p>
+
+<h2>Methodology</h2>
+<ul>
+  <li>Log transformation of price series</li>
+  <li>Differencing to achieve stationarity</li>
+  <li>Model selection using ARIMA</li>
+  <li>Forecasting with 95% prediction intervals</li>
+</ul>
+
+<h2>Results</h2>
+<p>
+The ARIMA(0,1,0) with drift model provided stable forecasts.
+The 95% prediction intervals achieved coverage close to the expected level,
+indicating the model effectively captured uncertainty.
+</p>
+
+<p><b>Key Insight:</b> The model performs well for short-term forecasting but remains sensitive to market volatility.</p>
+
+<h2>Tools</h2>
+<p>R, forecast package</p>
+
+<h2>Project Code</h2>
+<p>
+<a href="https://github.com/yourusername/tesla-stock-forecast" target="_blank">
+View Code on GitHub
+</a>
+</p>
+
+<p>
+<a href="index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>
